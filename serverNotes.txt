@@ -1,0 +1,66 @@
+*************************create server and request and fetch*************************
+
+1. To create own server we need http node js package
+    and with the help of this we can build server 
+    syntax:
+         import http from 'http'
+      const myserver=  http.createServer() //this the function used to create request.it takes callbackfunction
+          http.createServer( (req,res)=>{
+            //this function takes two parameters:if any external req or res will come it will handle them
+            //1. request: if req comes, all client side meta data stores here.
+            //2. response: if we want to send any request with the help of res.
+
+            res.end('hello this is my first response!');
+          })
+
+          2.To run this server we need one port (4000/3000/8000):
+            myserver.listen(8000, ()=>{
+              console.log("server Started")
+            })
+# We use the http.createServer method to create the server.
+# The request listener function has the correct signature with req and res parameters.
+# We set the response headers using res.writeHead.
+# We send the response using res.end.
+
+
+//////req////#" its object that contains a lot info "
+it contains many object 
+1.headers: contain all info about client/sender/user.
+
+*************exmple*****************
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+  console.log(req.headers)
+  res.end("Hello this is my first http request!");
+});
+
+server.listen(8000, () => {
+  console.log("listening from server 8000");
+});
+
+*************sample exmple********************
+//after executed sample example this data appended in the file.
+1690715648272: New sample data added using appendfile!!
+1690715648346: New sample data added using appendfile!! //browser do extra call 
+
+//after refreshing server
+1690715723220: New sample data added using appendfile!!
+1690715723286: New sample data added using appendfile!!
+1690715859186: New sample data added using appendfile!!
+1690715859256: New sample data added using appendfile!!
+1690716160123: / get info on which page user are!
+1690716160848: /favicon.ico get info on which page user are!
+1690716168227: /about get info on which page user are!
+1690716168776: /favicon.ico get info on which page user are!
+1690716172199: /about get info on which page user are!
+1690716172244: /favicon.ico get info on which page user are!
+1690716173778: /about get info on which page user are!
+1690716173822: /favicon.ico get info on which page user are!
+1690716178562: / get info on which page user are!
+1690716179238: /favicon.ico get info on which page user are!
+1690716221260: /contact get info on which page user are!
+1690716221348: /favicon.ico get info on which page user are!
+
+
+
