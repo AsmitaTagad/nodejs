@@ -64,3 +64,5 @@ server.listen(8000, () => {
 
 
 
+1690777530893: / get info on which page user are!
+1690777531158: /favicon.ico get info on which page user are!
