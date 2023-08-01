@@ -39,7 +39,8 @@ server.listen(8000, () => {
   console.log("listening from server 8000");
 });
 
-*************sample exmple********************
+************* ROutinG ********************
+
 //after executed sample example this data appended in the file.
 1690715648272: New sample data added using appendfile!!
 1690715648346: New sample data added using appendfile!! //browser do extra call 
